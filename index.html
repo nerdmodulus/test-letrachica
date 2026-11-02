@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La letra chica · NutriLab</title>
+<meta name="description" content="Lo que promete el envase y lo que dice en realidad. Investigado por estudiantes de 4° medio del Liceo 7 de Providencia.">
+<meta property="og:title" content="La letra chica · NutriLab">
+<meta property="og:description" content="¿Cuántas frases de envase te habrían pillado en el supermercado?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="portada">
+  <div class="dentro">
+    <div class="kick">NutriLab · Grupo 3</div>
+    <h1>La letra <em>chica</em></h1>
+    <p class="lead">Lo que promete el envase y lo que dice en realidad. Un traductor para el pasillo del supermercado, investigado por estudiantes de 4° medio del Liceo 7 de Providencia.</p>
+  </div>
+</header>
+
+<nav class="pestanas">
+  <button class="p on" data-hoja="gondola">Góndola</button>
+  <button class="p" data-hoja="dicc">Diccionario</button>
+  <button class="p" data-hoja="sel">Sellos</button>
+</nav>
+
+<main>
+
+  <section class="hoja activa" id="gondola">
+    <h2>Recorre la góndola</h2>
+    <p class="sub">Lee lo que dice el envase, pásale la lupa y descubre qué significa de verdad.</p>
+    <div class="avance" id="avance"></div>
+    <div class="riel"><i id="riel"></i></div>
+    <div class="escena" id="escena"></div>
+    <div id="acciones"></div>
+  </section>
+
+  <section class="hoja" id="dicc">
+    <h2>Diccionario del envase</h2>
+    <p class="sub">Las doce frases, para buscar cualquiera cuando la necesites.</p>
+    <div class="panel"><input id="q" type="search" placeholder="Buscar: light, natural, integral…"></div>
+    <div id="lista"></div>
+  </section>
+
+  <section class="hoja" id="sel">
+    <h2>Los sellos, en simple</h2>
+    <p class="sub">Toca cada octógono para ver qué mide en realidad.</p>
+    <div class="sellos" id="sellos"></div>
+  </section>
+
+</main>
+
+<section class="equipo">
+  <div>
+    <h3>Equipo que investigó estos envases</h3>
+    <p>[COLOCA LOS NOMBRES DE TU EQUIPO AQUÍ]</p>
+  </div>
+</section>
+
+<footer>
+  <div class="placa"><img src="assets/logo-ua.svg" alt="Universidad Autónoma de Chile"></div>
+  <p>
+    Carreras de Periodismo y de Nutrición y Dietética · Liceo 7 de Providencia<br>
+    Corporación de Desarrollo Social de Providencia · Vinculación con el Medio 2026
+  </p>
+</footer>
+
+<script src="js/terminos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
